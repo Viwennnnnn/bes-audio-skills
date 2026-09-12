@@ -1,0 +1,4 @@
+interface:
+  display_name: "BES SMF Log Debug"
+  short_description: "Diagnose BES UART, SMF, and KWS log issues"
+  default_prompt: "Use $bes-smf-log-debug to diagnose why BES SMF or KWS logs are missing from UART."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "BES KWS Port and Build"
+  short_description: "Verify, port, and build M33 KWS firmware"
+  default_prompt: "Use $bes-kws-port-build to verify, port, and build the KWS implementation for the target BES board."
