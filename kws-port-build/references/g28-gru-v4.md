@@ -1,6 +1,6 @@
-# Known G28 GRU v4 migration snapshot
+# Case study: G28 GRU v4 migration snapshot
 
-Snapshot established on 2026-09-11. Revalidate it against the current checkout before acting.
+Snapshot established on 2026-09-11 for one BES1700 checkout. It is an example of evidence to collect; revalidate it against the current checkout before acting.
 
 ## Before synchronization
 

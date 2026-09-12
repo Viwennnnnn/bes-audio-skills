@@ -1,6 +1,6 @@
-# G19 PAV and G28 RM1 audio context
+# Case study: G19 PAV and G28 RM1 audio context
 
-This is a maintained project snapshot, not a substitute for inspecting the current checkout.
+This is a maintained BES1700 project snapshot, not a universal rule and not a substitute for inspecting the current checkout. Use it as an example of how to record product-specific evidence.
 
 ## Product intent
 

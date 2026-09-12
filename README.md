@@ -1,14 +1,18 @@
-# Codex BES Audio Skills
+# Embedded Audio Firmware Skills
 
-Reusable Codex skills distilled from BES1700 `main_v2` audio/KWS work.
+Reusable skills for embedded audio firmware investigation, KWS integration,
+build validation, logging diagnosis, and Gerrit delivery. The original BES1700
+work is retained as a concrete case study, but the workflows are intended to
+apply to other vendors, boards, RTOSes, and repository layouts.
 
 | Skill | Use it for |
 | --- | --- |
-| `bes-audio-firmware-map` | Trace and explain G19 PAV/G28 RM1 audio firmware and algorithm paths |
-| `bes-kws-port-build` | Identify, synchronize, build, and validate M33 KWS variants |
-| `bes-gerrit-delivery` | Safely upload scoped changes from nested repositories to Gerrit |
-| `bes-smf-log-debug` | Diagnose missing UART, SMF, VAD, and KWS logs |
+| `audio-firmware-map` | Trace and explain embedded audio firmware and algorithm paths |
+| `kws-port-build` | Identify, synchronize, build, and validate KWS model variants |
+| `gerrit-delivery` | Safely upload scoped changes from nested repositories to Gerrit |
+| `smf-log-debug` | Diagnose missing UART, framework, VAD, and KWS logs |
 
 Each child directory is a standalone skill. Install by copying or linking the desired directory into `~/.codex/skills/`.
 
-Project-specific facts are explicitly marked as snapshots and should be revalidated against the active checkout.
+Vendor- and project-specific facts are explicitly marked as snapshots and
+should be revalidated against the active checkout.

@@ -1,20 +1,18 @@
 ---
-name: bes-gerrit-delivery
-description: Prepare and upload narrowly scoped changes from the BES1700 repo-style checkout to Gerrit, including nested-repository discovery, commit-message policy, review refs, and CI status interpretation. Use only when the user asks to commit, upload, or manage a Gerrit review.
+name: gerrit-delivery
+description: Prepare and upload narrowly scoped changes from a multi-repository checkout to Gerrit, including repository discovery, commit-message policy, review refs, and CI status interpretation. Use only when the user asks to commit, upload, or manage a Gerrit review.
 ---
 
-# BES Gerrit Delivery
+# Gerrit Delivery
 
 Gerrit upload changes external state. Inspect and stage freely when authorized to prepare a submission, but push only when the user explicitly asks to upload/submit.
 
 ## Repository routing
 
-This SDK is a repo-style multi-repository checkout. Locate the repository that actually tracks the target path with `git -C <candidate> status` or the nearest `.git` link.
+Many firmware SDKs use repo-style multi-repository checkouts. Locate the repository that actually tracks the target path with `git -C <candidate> status` or the nearest `.git` link.
 
-- `metabounds/configs/...` is tracked by the nested repository at `metabounds/configs`.
-- Known remote: `ssh://192.168.1.15:29418/bes/metabounds/configs`.
-- The reviewed target branch for this repository is `main`, so upload with `HEAD:refs/for/main` after confirming the live remote.
-- Do not force-add the path from the outer repository merely because the outer `.gitignore` hides `metabounds`.
+- Confirm the live remote, project, and target branch; never copy another project's host or branch assumptions blindly.
+- Do not force-add a path from an outer repository merely because an inner repository or ignore rule hides it.
 
 ## Delivery workflow
 

@@ -1,4 +1,0 @@
-interface:
-  display_name: "BES Audio Firmware Map"
-  short_description: "Inspect BES G19 and G28 audio firmware paths"
-  default_prompt: "Use $bes-audio-firmware-map to inspect and explain the audio path in this BES firmware."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Audio Framework Log Debug"
+  short_description: "Diagnose UART and audio log issues"
+  default_prompt: "Use $smf-log-debug to diagnose why audio framework or KWS logs are missing from UART."

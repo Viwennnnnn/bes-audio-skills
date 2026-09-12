@@ -1,4 +1,0 @@
-interface:
-  display_name: "BES Gerrit Delivery"
-  short_description: "Upload scoped BES changes for Gerrit review"
-  default_prompt: "Use $bes-gerrit-delivery to prepare and upload this BES change for Gerrit review."

@@ -1,4 +1,4 @@
-# G28 GRU v4 KWS log signatures
+# Case study: G28 GRU v4 KWS log signatures
 
 The examined `vad_algo.cpp` defaults to:
 

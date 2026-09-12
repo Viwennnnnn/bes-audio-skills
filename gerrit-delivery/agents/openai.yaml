@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gerrit Delivery"
+  short_description: "Upload scoped changes for Gerrit review"
+  default_prompt: "Use $gerrit-delivery to prepare and upload this change for Gerrit review."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Audio Firmware Map"
+  short_description: "Inspect embedded audio firmware paths"
+  default_prompt: "Use $audio-firmware-map to inspect and explain the audio path in this embedded firmware."

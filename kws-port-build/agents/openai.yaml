@@ -1,0 +1,4 @@
+interface:
+  display_name: "KWS Port and Build"
+  short_description: "Verify, port, and build embedded KWS"
+  default_prompt: "Use $kws-port-build to verify, port, and build the KWS implementation for the target embedded board."

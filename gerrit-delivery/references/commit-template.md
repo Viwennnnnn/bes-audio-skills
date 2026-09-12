@@ -1,6 +1,6 @@
-# Gerrit commit message policy
+# Gerrit commit message policy case study
 
-The BES Gerrit hook requires each section to exist with non-empty content:
+Some Gerrit installations require each section to exist with non-empty content. Discover the target project's hook/template; the following is the policy encountered in the BES case study:
 
 ```text
 <type>[#task-or-bug]component: concise subject
