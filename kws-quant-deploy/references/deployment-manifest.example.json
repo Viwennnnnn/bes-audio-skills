@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "model_id": "example-streaming-kws-v1",
+  "architecture": "gru",
+  "checkpoint_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "frontend": {
+    "sample_rate_hz": 16000,
+    "frame_samples": 400,
+    "hop_samples": 160,
+    "feature_type": "log_mel"
+  },
+  "streaming": {
+    "stateful": true,
+    "reset_policy": "reset on init, close, and accepted trigger"
+  },
+  "quantization": {
+    "method": "ptq",
+    "weight_dtype": "int8",
+    "activation_dtype": "int16",
+    "rounding": "target-defined nearest",
+    "saturation": "signed clamp at each declared requantization boundary"
+  },
+  "trigger": {
+    "score_domain": "probability",
+    "threshold": 0.72,
+    "temporal_rule": "project-defined"
+  },
+  "artifacts": [
+    {
+      "name": "model_parameters",
+      "path": "replace-with-real-artifact.bin",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ]
+}

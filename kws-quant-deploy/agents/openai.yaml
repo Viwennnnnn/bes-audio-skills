@@ -1,0 +1,4 @@
+interface:
+  display_name: "KWS Quantization and Deployment"
+  short_description: "Quantize, export, integrate, and validate KWS"
+  default_prompt: "Use $kws-quant-deploy to quantize this KWS model, export it for the target MCU, and validate float-to-device consistency."
