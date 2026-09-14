@@ -8,6 +8,7 @@ apply to other vendors, boards, RTOSes, and repository layouts.
 | Skill | Use it for |
 | --- | --- |
 | `audio-firmware-map` | Trace and explain embedded audio firmware and algorithm paths |
+| `embedded-kws-engineering` | Audit data, train/fine-tune, evaluate, and debug embedded KWS systems |
 | `kws-port-build` | Identify, synchronize, build, and validate KWS model variants |
 | `gerrit-delivery` | Safely upload scoped changes from nested repositories to Gerrit |
 | `smf-log-debug` | Diagnose missing UART, framework, VAD, and KWS logs |

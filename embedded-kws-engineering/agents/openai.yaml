@@ -1,0 +1,4 @@
+interface:
+  display_name: "Embedded KWS Engineering"
+  short_description: "Audit, train, evaluate, and debug embedded KWS systems"
+  default_prompt: "Use $embedded-kws-engineering to audit and improve this embedded KWS workflow."
