@@ -26,6 +26,15 @@ For the complete layer-by-layer handoff map, read
 
 ## Review sequence
 
+For a DSP-shaped host refactor, use matching module ownership (FFT, covariance,
+MVDR, beamformer, mask, synthesis), not empty renamed files. Freeze the accepted
+reference and compile it separately for regression with the same flags.
+Keep fixed-point helpers distinct from actual vendor DSP libraries. Module
+similarity alone does not establish API/ABI compatibility with the target.
+Keep algorithm modules physically separate from host numeric backends and
+vendor libraries. A directory split is not a completed backend abstraction:
+identify any geometry/configuration dependencies remaining across the boundary.
+
 1. Run `make test` in the delivery package.
 2. Convert a verified stereo 16 kHz WAV with `tools/run_one_wav.py`.
 3. Listen to `bypass`, then pure `mvdr`, then `dsp_mask`. Treat
